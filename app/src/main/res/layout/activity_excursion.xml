@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Excursions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/vacationIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vacation ID"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Excursion Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/descInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Excursion Date (MM/DD/YYYY)"
+            android:inputType="date" />
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Excursion"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Excursion"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Excursion"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Excursions"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</ScrollView>
